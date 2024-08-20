@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    background-color:grey;
+  }
+  
+  .footer-social a {
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+  }
+  .serv{
+    color:red;
+    font-size:10px;
+  }
+  
+  .footer-social a:hover {
+    color:red;
+  }
+  .h-estilo {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:700px;
+    font-size: 5rem;
+    color: rgb(240, 13, 13);
+  }
+ .traslado-estilo {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 1.4em;
+    color:yellow;
+    text-align: center;
+  }
+  
+  .nombre-estilo {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.10rem;
+    color:red;
+  }
+  
+/*banner*/
+#banner{
+    padding: 0 50px;
+    background-image:url("imagenes/htraslados.jpeg");
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner::before{
+    content: '';
+    background: rgba(17, 17, 20, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left:0;
+}
+.contenido_banner{
+    position: relative;
+    color:white;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+.contenido_banner h3{
+    
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.contenido_banner h3 span{
+   font-weight: 600; 
+}
+
+/*personas*/
+#personas{
+    background-color:white;/* color fondo de imagenes*/
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   display:flex;
+    justify-content:center;
+    text-align: center;
+    width: 100%;
+}
+    
+#personas img{
+    
+    border-radius: 100%;
+    width: 300px;
+    height: 250px;
+}
+#personas div{
+    padding:30px 30px;
+    
+}
+#personas div h4{
+    color:white;
+    font-size: 20px;
+    margin:15px 0px;
+}
+#personas div p{
+    color:black;
+    font-size: 18px;
+}
+
+/* FOTOS */
+#fotos {
+    padding: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+#fotos h2 {
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:red;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contenedor div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor img {
+    width: 300px; /* Adjust to desired width */
+    height: 300px; /* Adjust to desired height */
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+/*iconos*/
+#iconos{
+    
+    background-color: #4d4d5c;
+    width: 100%;
+}
+.contenido_iconos{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenido_iconos div{
+    flex:1;
+    margin: 20px 0px;
+    border-right: 2px solid rgba(255,255,255,0.2);
+
+}
+#icono_mobile{
+    border:none;
+}
+.contenido_iconos div i{
+    color:red;
+}
+.contenido_iconos div h6{
+    color:#dee2e6;
+    font-size: 20px;
+    font-weight: 100;
+    margin:10px 0px;
+}
+.contenido_iconos div p{
+    color:rgba(248, 244, 244, 0.55);
+    font-size: 15px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+    background-color:grey;
+  }
+  
+  .footer-contact a {
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+  }
+  .footer-contact a:hover {
+    color:red;
+  }
+/*responsive*/
+@media(max-width:768px){
+    #personas{
+        flex-direction: column;
+    }
+    
+    #personas img {
+        width: 200px;
+        height: 150px;
+    }
+     /* Fuentes */
+     .contenido_banner h3 {
+        font-size: 20px;
+    }
+    .contenido_banner h1 {
+        font-size: 2rem;
+    }
+    .contenido_iconos div h6 {
+        font-size: 18px;
+    }
+    .contenido_iconos div p {
+        font-size: 14px;
+    }
+    /*iconos*/
+    .contenido_iconos{
+        flex-direction: column;
+    }
+    .contenido_iconos div{
+        border-right:none;
+        margin-bottom: 20px;
+    }
+    .footer-contact{
+        background-size: cover;
+        padding: 10px 0;
+    }
+    .footer-contact{
+        flex-direction: column;
+    }
+
+    
+    }
